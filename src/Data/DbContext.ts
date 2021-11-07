@@ -58,6 +58,10 @@ export class DbContext {
     await this._sequelize.authenticate();
   }
 
+  public async disconnect(): Promise<void> {
+    await this._sequelize.close();
+  }
+
   public async query(...args: Parameters<Sequelize['query']>) {
     return this._sequelize.query(...args);
   }

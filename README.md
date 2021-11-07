@@ -1,5 +1,13 @@
 # Sunmait career day API server
 
+## TODO
+
+- cover users controller with tests
+- remove `import = require`
+- make sure timestamps for sequelize working fine
+- setup docker for dev needs (db)
+- setup docker for migration/seeders
+
 ### Installation
 
 You need to have PostgreSQL running on your local machine. PostgreSQL server config file located in:
@@ -7,6 +15,7 @@ You need to have PostgreSQL running on your local machine. PostgreSQL server con
 ```sh
 /API/config/default.example
 ```
+
 create your own 'default.json' with your data.
 Also you need to create a database with name "sunmait_career_days_development".
 
@@ -23,6 +32,7 @@ Configuration file located in:
 ```sh
 /migrations/config.example
 ```
+
 create your own 'config.json' with your data.
 
 Next, to create tables you need run:

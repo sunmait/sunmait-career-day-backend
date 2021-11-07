@@ -1,5 +1,5 @@
-import path = require('path');
-process.env.NODE_CONFIG_DIR = path.resolve(__dirname, '..', '..', 'config');
+import path from 'path';
+process.env.NODE_CONFIG_DIR = path.resolve('src', 'API', 'config');
 import config from 'config';
 import {
   ISettingsProvider,
