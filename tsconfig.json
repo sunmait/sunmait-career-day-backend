@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2019",
+    "outDir": "dist",
+    "lib": ["ES2019"] /* Specify library files to be included in the compilation. */,
+    "allowJs": true,
+    "sourceMap": true,
+    "removeComments": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "typeRoots": ["node_modules/@types"],
+    "strict": true,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */
+  },
+  "include": ["src/API/**/*", "src/Data/**/*", "src/Domain/**/*"]
+}
